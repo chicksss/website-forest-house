@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="fixed w-full z-20">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <!-- <img src="logo.png" class="h-8" alt="Flowbite Logo" /> -->
+          <span
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white md:ml-20"
+            >FREEAIR</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          style="
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+          "
+          class="hidden w-full md:block bg-transparent md:bg-transparent md:w-auto"
+          id="navbar-default"
+        >
+          <ul
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="font-light md:mr-20 flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 bg-transparent text-white rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 bg-transparent text-white rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-white"
+                >Images</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 bg-transparent text-white rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-white"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 bg-transparent text-white rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="mt-10 border-t border-white absolute z-20" />
+
+    <section
+      class="relative md:h-[100%] h-[100%] bg-[url('h1.jpg')] bg-cover bg-no-repeat z-1"
+    >
+      <div
+        class="absolute inset-0 h-full w-full z-0"
+        style="
+          background: rgb(0, 0, 0);
+          background: linear-gradient(
+            3deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 8%,
+            rgba(255, 255, 255, 0) 100%
+          );
+        "
+      ></div>
+
+      <div>
+        <div class="justify-center px-5">
+          <div class="grid h-screen place-items-center md:ml-[-300px]">
+            <div class="relative">
+              <h1
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="text-1xl font-[Montserrat] text-white"
+              >
+                Escape to Tranquility:
+              </h1>
+              <b
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="70"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="md:text-5xl text-4xl md:font-bold text-[#70e000]"
+              >
+                Discover the Magic of Forest House</b
+              >
+              <p
+                data-aos="fade-in"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="md:w-[600px] text-white text-justify pt-5 font-[Montserrat]"
+              >
+                Nestled deep within the serene landscape of the forest, Forest
+                House is a place like no other. Here, the world slows down, and
+                you’re invited to escape into a sanctuary where nature’s beauty
+                and luxurious comfort come together. Whether you’re here to
+                relax or seek adventure, Forest House promises a memorable
+                experience surrounded by the splendor of nature.
+              </p>
+
+              <div class="pt-5">
+                <button class="rounded-full px-10 py-2 bg-white">
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-[100%] bg-[#000814] py-10 px-5">
+      <div
+        class="md:flex md:justify-center md:gap-10 grid grid-cols-2 place-items-center gap-5"
+      >
+        <div>
+          <img
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="h2.jpg"
+            class="md:w-64 h-96 rounded-lg shadow-lg mt-10 transition ease-in-out duration-300 hover:scale-105"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="h3.jpg"
+            class="md:w-64 h-96 rounded-lg shadow-lg mt-[-10px] transition ease-in-out duration-300 hover:scale-105"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="h4.jpg"
+            class="md:w-64 h-96 rounded-lg shadow-lg mt-10 transition ease-in-out duration-300 hover:scale-105"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="h5.jpg"
+            class="md:w-64 h-96 rounded-lg shadow-lg mt-[-10px] transition ease-in-out duration-300 hover:scale-105"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="md:w-[700px] mx-auto pt-10">
+        <i class="text-white text-center">
+          <span class="text-[#70e000]"
+            >Nestled deep in the heart of the forest
+          </span>
+          , Forest House offers a perfect blend of rustic charm and modern
+          amenities. With expansive views, sustainable design,
+          <span class="text-[#70e000]">and a calming ambiance,</span> it’s the
+          ideal place
+          <span class="text-[#70e000]"
+            >to escape the hustle and bustle of daily life</span
+          >
+          . Forest House isn't just a stay; it's an experience</i
+        >
+      </div>
+    </section>
+
+    <section class="h-[100%] bg-[#000814] py-10 px-5">
+      <div class="text-white grid grid-cols-1 gap-10">
+        <div class="flex justify-center gap-10">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class=""
+          >
+            <b>Book Now</b>
+            <p class="w-64 font-light text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              natus ipsam,
+            </p>
+          </div>
+          <div>
+            <img
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              src="s1.jpg"
+              class="w-96 h-44 rounded-lg md:block hidden"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="hidden md:block">
+          <div class="flex justify-center gap-10">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class=""
+            >
+              <img src="s2.jpg" class="w-96 h-44 rounded-lg" alt="" />
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class=""
+            >
+              <b>View Our Cabins</b>
+              <p class="w-64 font-light text-justify text-right">
+                We offer a variety of cozy cabins, each thoughtfully designed to
+                blend seamlessly with the forest. Whether you’re seeking a
+                secluded hideaway or a space to gather with friends, our cabins
+                provide comfort and privacy in a beautiful setting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-10 md:hidden block">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class=""
+          >
+            <b>View Our Cabins</b>
+            <p class="w-64 font-light text-justify text-right">
+              We offer a variety of cozy cabins, each thoughtfully designed to
+              blend seamlessly with the forest. Whether you’re seeking a
+              secluded hideaway or a space to gather with friends, our cabins
+              provide comfort and privacy in a beautiful setting.
+            </p>
+          </div>
+          <div>
+            <img
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              src="s3.jpg"
+              class="w-96 h-44 rounded-lg md:block hidden"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+          <div 
+          data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    class="">
+            <b>Discover Nearby Attractions</b>
+            <p class="w-64 font-light text-justify text-right">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              natus ipsam,
+            </p>
+          </div>
+          <div>
+            <img
+            data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+              src="s3.jpg"
+              class="w-96 h-44 rounded-lg md:block hidden"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-[50vh] bg-[#000814] py-10 px-5">
+      <div class="text-white mx-auto text-center">
+        <h1
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="text-3xl font-[Montserrat] text-white"
+        >
+          Reviews
+        </h1>
+        <div class="pt-10">
+          <i
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="text-white"
+            >A hidden gem in the forest! The cabin was beautiful, and the
+            peacefulness of the surroundings was just what we needed.”
+          </i>
+          <br />
+          <span class="text-[#70e000]"> - Sarah M.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-[100%] bg-[#000814] py-10 px-5">
+      <div class="text-white mx-auto text-center">
+        <h1 class="text-3xl font-[Montserrat] text-white">Contact Us:</h1>
+        <br />
+        <i class="text-white py-5 pt-5"
+          >Plan your perfect getaway at Forest House. Reach out to us with any
+          questions, and we’ll help you with everything you need.</i
+        >
+        <div class="flex justify-center gap-10 py-10">
+          <div class="text-right">
+            <ul>
+              <li>Phone: +123-456-7890</li>
+              <li>Email: info@foresthouse.com</li>
+              <li>Location: 123 Forest Trail, Green Valley, CO</li>
+            </ul>
+          </div>
+          <div>
+            <img src="s2.jpg" class="w-96 h-44 rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
